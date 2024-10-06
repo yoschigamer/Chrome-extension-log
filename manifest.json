@@ -10,8 +10,15 @@
     "128": "icon/icon128.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "/popup/popup.html",
     "default_icon": "icon/icon128.png"
